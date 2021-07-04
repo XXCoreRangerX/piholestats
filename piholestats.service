@@ -1,0 +1,12 @@
+[Unit]
+Description=PiHole Stats Display
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /usr/local/bin/piholestats/piholestats.py
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
