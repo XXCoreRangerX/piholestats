@@ -76,17 +76,17 @@ font = ImageFont.load_default()
 font_title = ImageFont.load_default()
 ```
 
-4. Move the `piholestats.service` service to `/etc/systemd/system/piholestats.service`.
+5. Move the `piholestats.service` service to `/etc/systemd/system/piholestats.service`.
 ```console
 mv piholestats.service /etc/systemd/system/
 ```
-5. Execute the following commands in the terminal to set up the service:
+6. Execute the following commands in the terminal to set up the service:
 ```console
 systemctl daemon-reload
 systemctl enable piholestats
 systemctl start piholestats
 ```
-6. The script should now start and automatically start on the next boot.
+7. The script should now start and automatically start on the next boot.
 
 ---
 
